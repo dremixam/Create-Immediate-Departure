@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "create_immediate_departure:block/ticket_validator", "y": 270 },
+    "facing=east": { "model": "create_immediate_departure:block/ticket_validator" },
+    "facing=south": { "model": "create_immediate_departure:block/ticket_validator", "y": 90 },
+    "facing=west": { "model": "create_immediate_departure:block/ticket_validator", "y": 180 }
+  }
+}

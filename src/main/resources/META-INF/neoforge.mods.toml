@@ -1,0 +1,44 @@
+modLoader = "javafml"
+loaderVersion = "${neo_loader_version_range}"
+# Required by NeoForge; "All Rights Reserved" is a placeholder until a real license is picked.
+license = "All Rights Reserved"
+
+[[mods]]
+modId = "create_immediate_departure"
+version = "${version}"
+displayName = "Create: Immediate Departure"
+description = '''Fast-travel between Create train stations, once you've discovered them and connected your rail network.'''
+authors = "DrEmixam"
+logoFile = "assets/create_immediate_departure/icon.png"
+
+[[dependencies.create_immediate_departure]]
+    modId = "neoforge"
+    type = "required"
+    versionRange = "[${neoforge_version},)"
+    ordering = "NONE"
+    side = "BOTH"
+
+[[dependencies.create_immediate_departure]]
+    modId = "minecraft"
+    type = "required"
+    versionRange = "[${mc_range_lower},${mc_range_upper})"
+    ordering = "NONE"
+    side = "BOTH"
+
+[[dependencies.create_immediate_departure]]
+    modId = "create"
+    type = "required"
+    versionRange = "[6.0.0,)"
+    ordering = "NONE"
+    side = "BOTH"
+
+# Client-only: the config screen is never reached on a dedicated server.
+[[dependencies.create_immediate_departure]]
+    modId = "cloth_config"
+    type = "required"
+    versionRange = "[${cloth_config_version},)"
+    ordering = "NONE"
+    side = "CLIENT"
+
+[[mixins]]
+    config = "create_immediate_departure.mixins.json"

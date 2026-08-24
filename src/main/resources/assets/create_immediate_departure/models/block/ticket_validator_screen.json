@@ -1,0 +1,22 @@
+{
+	"credit": "DrEmixam",
+	"textures": {
+		"0": "create_immediate_departure:block/ticket_validator_emissive",
+		"particle": "create_immediate_departure:block/ticket_validator_emissive"
+	},
+	"elements": [
+		{
+			"from": [8.25, 23.4, 4.201],
+			"to": [9.025, 26.1, 7.199],
+			"rotation": {"angle": 22.5, "axis": "z", "origin": [9, 28, 2]},
+			"faces": {
+				"north": {"uv": [9, 15, 12, 16], "texture": "#0"},
+				"east": {"uv": [0, 0, 16, 15], "texture": "#0"},
+				"south": {"uv": [3, 15, 6, 16], "texture": "#0"},
+				"west": {"uv": [0, 15, 1, 16], "texture": "#0"},
+				"up": {"uv": [15, 16, 12, 15], "texture": "#0"},
+				"down": {"uv": [6, 16, 9, 15], "texture": "#0"}
+			}
+		}
+	]
+}

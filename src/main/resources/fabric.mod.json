@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "create_immediate_departure",
+  "version": "${version}",
+  "name": "Create: Immediate Departure",
+  "description": "Fast-travel between Create train stations, once you've discovered them and connected your rail network.",
+  "authors": [
+    "DrEmixam"
+  ],
+  "icon": "assets/create_immediate_departure/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.dremixam.immediatedeparture.platforms.fabric.ImmediateDepartureFabric"
+    ],
+    "client": [
+      "com.dremixam.immediatedeparture.platforms.fabric.ImmediateDepartureFabricClient"
+    ],
+    "modmenu": [
+      "com.dremixam.immediatedeparture.platforms.fabric.ImmediateDepartureModMenu"
+    ]
+  },
+  "mixins": [
+    "create_immediate_departure.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "${minecraft_version_range}",
+    "create": "*",
+    "cloth-config": "*",
+    "modmenu": "*"
+  }
+}

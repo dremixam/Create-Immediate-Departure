@@ -226,6 +226,8 @@ modrinth {
     versionName.set(rootProject.property("mod_version") as String)
     versionType.set("release")
     changelog.set(System.getenv("CHANGELOG") ?: "See the commits for changelog details.")
+    clientSide.set("required")
+    serverSide.set("required")
     // "remapJar" doesn't exist under loom-no-remap; the plain "jar" is the right artifact in that mode.
     uploadFile.set(tasks.named(if (noRemap) "jar" else "remapJar"))
     gameVersions.set(listOf(project.property("minecraft_version") as String))
